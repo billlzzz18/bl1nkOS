@@ -1,5 +1,3 @@
-กุแปลง README.md ของฝั่ง SDK ให้เป็นแบรนด์ @bl1nk เรียบร้อยแล้วมึง โดยเปลี่ยนชื่อฟังก์ชัน, คลาส, และ Environment Variables ให้สอดคล้องกับระบบของมึงทั้งหมด
-ก๊อปไปวางที่ packages/sdk/README.md ได้เลยมึง:
 # @bl1nk/sdk
 
 SDK for [bl1nkOS](https://github.com/billlzzz18/bl1nkOS) — AI agents with up-to-date knowledge base access.
