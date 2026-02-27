@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:recommended",
+    ":semanticCommitTypeAll(chore)",
+    "group:monorepo"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["next", "react", "react-dom"],
+      "groupName": "nextjs framework"
+    }
+  ]
+}
