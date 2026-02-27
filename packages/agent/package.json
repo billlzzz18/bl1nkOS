@@ -1,0 +1,54 @@
+{
+  "name": "@bl1nk/agent",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Framework-agnostic agent core for BL1NK Knowledge Agent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billlzzz18/bl1nkOS.git",
+    "directory": "packages/agent"
+  },
+  "bugs": {
+    "url": "https://github.com/billlzzz18/bl1nkOS/issues"
+  },
+  "homepage": "https://github.com/billlzzz18/bl1nkOS/tree/main/packages/agent#readme",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@ai-sdk/gateway": "^3.0.45",
+    "@ai-sdk/openai": "^3.0.30",
+    "@ai-sdk/provider": "^3.0.8",
+    "ai": "^6.0.85",
+    "evlog": "^1.9.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@hrcd/eslint-config": "^3.0.3",
+    "@types/node": "^25.2.2",
+    "eslint": "^9.23.0",
+    "tsdown": "^0.20.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
